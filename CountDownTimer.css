@@ -1,0 +1,23 @@
+body{
+    background-image: url(newyear.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    word-spacing: 100px;
+}
+h2{
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    text-align: center;
+    font-size: 20px;
+}
