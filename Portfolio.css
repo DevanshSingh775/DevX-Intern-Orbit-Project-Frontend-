@@ -1,0 +1,178 @@
+:root 
+{
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --light-bg: #ffffff;
+    --dark-text: #2c3e50;
+    --light-text: #ffffff;
+    --card-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-header 
+{
+    background-color: var(--primary-color);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: var(--card-shadow);
+}
+.nav-container 
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-brand 
+{
+    color: var(--light-text);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.nav-menu 
+{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+.nav-link 
+{
+    color: var(--light-text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.nav-link:hover 
+{
+    color: var(--secondary-color);
+}
+.portfolio-section 
+{
+    padding: 6rem 2rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.section-container 
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+.section-title 
+{
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--dark-text);
+    font-size: 2.5rem;
+}
+.section-title i 
+{
+    margin-right: 1rem;
+    color: var(--secondary-color);
+}
+.about-section 
+{
+    background-color: var(--light-bg);
+    margin-top: 4rem;
+}
+.profile-card 
+{
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    box-shadow: var(--card-shadow);
+}
+.profile-image 
+{
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid var(--secondary-color);
+}
+.profile-content 
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.profile-name 
+{
+    font-size: 2rem;
+    color: var(--dark-text);
+    margin-bottom: 1rem;
+}
+.profile-bio 
+{
+    line-height: 1.6;
+    color: #666;
+}
+.skills-section 
+{
+    background-color: white;
+}
+.skills-grid 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+.skill-card 
+{
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: var(--card-shadow);
+}
+.skill-card:hover 
+{
+    transform: translateY(-5px);
+}
+.skill-icon 
+{
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+.skill-title 
+{
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--dark-text);
+}
+.skill-items 
+{
+    color: #666;
+    line-height: 1.6;
+}
+@media (max-width: 768px) 
+{
+    .nav-menu {
+        display: none;
+    }
+    .profile-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .profile-image {
+        width: 200px;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+}
